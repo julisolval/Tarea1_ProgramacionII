@@ -1,0 +1,23 @@
+#include "DevaluacionAnio.h"
+
+std::map<int, double> DevaluacionAnio::tabla = {
+    {2025, 0},
+    {2024, 0.01},
+    {2023, 0.02},
+    {2022, 0.03},
+    {2021, 0.04},
+    {2020, 0.05},
+    {2019, 0.06},
+    {2018, 0.07},
+    {2017, 0.08}
+};
+
+bool DevaluacionAnio::buscarAnio(const int anio)
+{
+    return  (tabla.find(anio) != tabla.end());
+}
+
+double DevaluacionAnio::obtenerDevaluacion(const int anio)
+{
+    return tabla.at(anio);
+}
