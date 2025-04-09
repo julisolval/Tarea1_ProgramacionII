@@ -9,7 +9,9 @@ tiene una única responsabilidad.
 class IngresarPrecio
 {
 public:
-	static double ingresarPrecio(const int);
+	IngresarPrecio();
+	virtual ~IngresarPrecio();
+	double ingresarPrecio(const int);
 };
 
 #endif

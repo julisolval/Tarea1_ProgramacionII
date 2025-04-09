@@ -9,7 +9,9 @@ tiene una única responsabilidad.
 class IngresarMarca
 {
 public:
-	static std::string ingresarMarca(const int);
+	IngresarMarca();
+	virtual ~IngresarMarca();
+	std::string ingresarMarca(const int);
 };
 
 #endif

@@ -1,4 +1,14 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
 #include "IngresoDeInformacion.h"
+
+IngresoDeInformacion::IngresoDeInformacion()
+{
+}
+
+IngresoDeInformacion::~IngresoDeInformacion()
+{
+}
 
 Vehiculo* IngresoDeInformacion::capturarInformacion(const int can)
 {
@@ -12,5 +22,6 @@ Vehiculo* IngresoDeInformacion::capturarInformacion(const int can)
 	precio = ingresarPrecio(can);
 	std::cout << std::endl;
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-	return new Vehiculo(marca ,anio ,cilindrada ,precio);
+
+	return new Vehiculo(marca, anio, cilindrada, precio);
 }

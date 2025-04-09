@@ -16,6 +16,8 @@ class DevaluacionMarca
 private: 
 	static std::map<std::string, double> tabla;
 public:
+    DevaluacionMarca();
+    virtual ~DevaluacionMarca();
     static bool buscarMarca(const std::string &);
     static double obtenerDevaluacion(const std::string &);
 };

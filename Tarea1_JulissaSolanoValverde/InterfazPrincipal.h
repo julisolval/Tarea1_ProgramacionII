@@ -6,8 +6,8 @@
 /*
 Herencia Múltiple:
 InterfazPrincipal es una clase derivada de IngresoDeInformacion e IMostrarResultados, 
-las cuales son clases base. 
-Es herencia múltiple ya que una clase derivada hereda de dos o más clases base.
+las cuales son clases base. Es herencia múltiple ya que una clase derivada hereda de dos 
+o más clases base.
 
 Segregación de Interfaces:
 Desarrollé dos interfaces pequeñas y específicas, en lugar de una 
@@ -20,7 +20,9 @@ responsabilidad única, ya que cada interfaz tiene su función específica.
 
 class InterfazPrincipal: public IngresoDeInformacion, public IMostrarResultados {
 public:
-	static void Menu();
+	InterfazPrincipal();
+	~InterfazPrincipal();
+	void Menu();
 };
 
 #endif

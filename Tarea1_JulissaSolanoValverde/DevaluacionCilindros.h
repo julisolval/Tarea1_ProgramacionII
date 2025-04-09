@@ -15,6 +15,8 @@ class DevaluacionCilindros
 private:
 	static std::map<int, double> tabla;
 public:
+	DevaluacionCilindros();
+	virtual ~DevaluacionCilindros();
 	static bool buscarCilindros(const int);
 	static double obtenerDevaluacion(const int);
 

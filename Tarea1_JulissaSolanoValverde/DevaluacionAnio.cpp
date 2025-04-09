@@ -1,3 +1,5 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
 #include "DevaluacionAnio.h"
 
 std::map<int, double> DevaluacionAnio::tabla = {
@@ -11,6 +13,14 @@ std::map<int, double> DevaluacionAnio::tabla = {
     {2018, 0.07},
     {2017, 0.08}
 };
+
+DevaluacionAnio::DevaluacionAnio()
+{
+}
+
+DevaluacionAnio::~DevaluacionAnio()
+{
+}
 
 bool DevaluacionAnio::buscarAnio(const int anio)
 {

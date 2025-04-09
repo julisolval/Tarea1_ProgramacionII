@@ -63,6 +63,12 @@
     <ClCompile Include="Precio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PrecioFinal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncionesEspeciales.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vehiculo.h">
@@ -108,6 +114,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Precio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncionesEspeciales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrecioFinal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

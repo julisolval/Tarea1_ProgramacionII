@@ -15,6 +15,8 @@ class DevaluacionAnio
 private:
 	static std::map<int, double> tabla;
 public:
+	DevaluacionAnio();
+	virtual ~DevaluacionAnio();
 	static bool buscarAnio(const int);
 	static double obtenerDevaluacion(const int);
 };

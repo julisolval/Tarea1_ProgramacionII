@@ -1,3 +1,5 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
 #include "DevaluacionMarca.h"
 
 std::map<std::string, double> DevaluacionMarca::tabla = {
@@ -10,6 +12,14 @@ std::map<std::string, double> DevaluacionMarca::tabla = {
     {"SKODA", 0.08},
     {"VOLKSWAGEN", 0.05}
 };
+
+DevaluacionMarca::DevaluacionMarca()
+{
+}
+
+DevaluacionMarca::~DevaluacionMarca()
+{
+}
 
 bool DevaluacionMarca::buscarMarca(const std::string &marca)
 {

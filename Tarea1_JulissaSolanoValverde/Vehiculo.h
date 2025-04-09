@@ -8,26 +8,33 @@
 #include <cstdlib>
 #include <ctime> 
 
-/*
-Herencia Disjunta: Vehículo hereda de varias clases base que no estan relacionadas entre sí
-*/
-class Vehiculo: public Marca, public Anio, public Cilindrada, public Precio
+class Vehiculo
 {
 private:
-	static std::string FuncionEspecial1(bool[], int );
+	Marca* marca;
+	Anio* anio;
+	Cilindrada* cilindrada;
+	Precio* precio;
+	virtual std::string FuncionEspecial1(bool[], int );
 protected:
-	static std::string FuncionEspecial2(bool[], int );
+	virtual std::string FuncionEspecial2(bool[], int );
 public:
+	Vehiculo();
 	Vehiculo(std::string, int, int, double);
+	Vehiculo(const Vehiculo&);
 	virtual ~Vehiculo();
 
-	static double precioFinal(Vehiculo&);
+	std::string getMarca() const;
+	int getAnio() const;
+	int getCilindrada() const;
+	double getPrecio() const;
 
-	static std::string precioOriginalFinal(Vehiculo&, int);
+	static bool anioCorrecto(int);
+	static bool cilindradaCorrecta(int);
+	static bool marcaCorrecta(const std::string&);
+	static bool precioCorrecto(double);
 
-	static std::string getFuncionEspecial1(bool[], int);
-	static std::string getFuncionEspecial2(bool[], int);
-
+	virtual std::string precioOriginalFinal(Vehiculo&, int);
 };
 
 #endif

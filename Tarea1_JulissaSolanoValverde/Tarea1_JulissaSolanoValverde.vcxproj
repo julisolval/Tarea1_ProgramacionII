@@ -132,6 +132,7 @@
     <ClCompile Include="DevaluacionAnio.cpp" />
     <ClCompile Include="DevaluacionCilindros.cpp" />
     <ClCompile Include="DevaluacionMarca.cpp" />
+    <ClCompile Include="FuncionesEspeciales.cpp" />
     <ClCompile Include="IngresarAnio.cpp" />
     <ClCompile Include="IngresarCilindrada.cpp" />
     <ClCompile Include="IngresarMarca.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="Marca.cpp" />
     <ClCompile Include="IMostrarResultados.cpp" />
     <ClCompile Include="Precio.cpp" />
+    <ClCompile Include="PrecioFinal.cpp" />
     <ClCompile Include="Vehiculo.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +152,7 @@
     <ClInclude Include="DevaluacionAnio.h" />
     <ClInclude Include="DevaluacionCilindros.h" />
     <ClInclude Include="DevaluacionMarca.h" />
+    <ClInclude Include="FuncionesEspeciales.h" />
     <ClInclude Include="IngresarAnio.h" />
     <ClInclude Include="IngresarCilindrada.h" />
     <ClInclude Include="IngresarMarca.h" />
@@ -159,6 +162,7 @@
     <ClInclude Include="Marca.h" />
     <ClInclude Include="IMostrarResultados.h" />
     <ClInclude Include="Precio.h" />
+    <ClInclude Include="PrecioFinal.h" />
     <ClInclude Include="Vehiculo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
